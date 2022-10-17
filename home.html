@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Css/style.css">
     <link rel="stylesheet" href="./Css/style3.css">
+    
 
 </head>
 <body id="home">
@@ -374,10 +375,12 @@
                 </div>
                 <div class="form-body">
                     <form action="" class="fform">
-                        <input  type="text" name="name" id="name" placeholder="Name*">
+                        <input  type="text" name="name" id="name-feedback" placeholder="Name*">
                         <input type="email" name="email" id="email" placeholder="Email*">
-                        <textarea name="feedbackMessage" id="feedbakcMessage" cols="" rows="10"></textarea>
-                        <button class="btn-form" type="submit" class="btn">Send Message</button>
+                        <textarea name="feedbackMessage" id="feedbackMessage" cols="" rows="10"></textarea>
+                        <div id="submit-div">
+                            <input class=" btn btn-form" type="submit" id="submit" value="Send Message">
+                        </div>
                     </form>
                 </div>
             </div>
@@ -424,5 +427,6 @@
            &copy; 2022 Created by <span>Kaustubh Bhatt</span> 
         </div>
     </footer>
+    <script src="./JavaScript/app.js"></script>
 </body>
 </html>
