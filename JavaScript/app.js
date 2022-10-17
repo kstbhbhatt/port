@@ -11,10 +11,12 @@ document.getElementById("submit").addEventListener('mouseenter', function(e){
 
 function create(){
     // alert(1);
-    let message = document.getElementById("feedbackMessage");
+    let message = document.getElementById("message");
     let name = document.getElementById("name-feedback");
     let messageTxt = message.value;
-   
+    let nameTxt = name.value;
+    let body = `${messageTxt}
+    ${nameTxt}`;
     let btn = document.getElementById("submit-div");
 
     

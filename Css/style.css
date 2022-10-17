@@ -701,6 +701,10 @@ img:hover{
     padding: 10px 05px;
     width: 100%;
 }
+#submit-div input:hover{
+    cursor: pointer;
+}
+
 .ul-bold{
     font-size: 16px;
     padding: 5px;
