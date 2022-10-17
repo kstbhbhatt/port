@@ -293,10 +293,12 @@ h3{
 }
 
 .col4{
+    box-sizing: border-box;
     padding: 0 20px;
     width:33.33%
 }
 .card{
+    box-sizing: border-box;
     margin: 0 -10px 0 0;
     padding: 20px;
     border: 1px solid #dee2e6;
@@ -335,6 +337,7 @@ h3{
     border: grey;
 }
 .card1{
+    box-sizing: border-box;
     margin: 0 -10px 30px 0;
     padding: 20px;
     border: 1px solid #dee2e6;
@@ -357,6 +360,7 @@ h3{
     justify-content: flex-start
 }
 .progress{
+    box-sizing: border-box;
     /* height: 100%; */
     background-color: #F85C70;
     border-radius: 2.5px;
