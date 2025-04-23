@@ -7,13 +7,11 @@ import DownloadIcon from "@mui/icons-material/Download";
 import { Typography, Box, Button, Container } from "@mui/material";
 
 const Header = () => {
-  // create element
-  const resume = "./../../public/assets/Kaustubh_Bhatt_React_JS.pdf";
-  const link = document.createElement("a");
-  link.href = resume;
-  link.download = "Kaustubh_Bhatt_React_JS.pdf";
-
   const onButtonClick = () => {
+    const resume = "./../../public/assets/Kaustubh_Bhatt_React_JS.pdf";
+    const link = document.createElement("a");
+    link.href = resume;
+    link.download = "Kaustubh_Bhatt_React_JS.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
