@@ -77,19 +77,18 @@ const ActionAreaCard = ({
 };
 const Portfolio = () => {
   const imageData = [
-    { img: img1, row: 1, cols: 2 },
-    { img: img2, row: 1, cols: 1 },
-    { img: img3, row: 1, cols: 2 },
-    { img: img4, row: 1, cols: 1 },
-    { img: img5, row: 2, cols: 1 },
-    { img: img6, row: 2, cols: 1 },
-    { img: img7, row: 3, cols: 1 },
-    { img: img8, row: 2, cols: 1 },
-    { img: img9, row: 1, cols: 1 },
-    { img: img10, row: 1, cols: 2 },
+    { id: 1, img: img1, row: 1, cols: 2 },
+    { id: 2, img: img2, row: 1, cols: 1 },
+    { id: 3, img: img3, row: 1, cols: 2 },
+    { id: 4, img: img4, row: 1, cols: 1 },
+    { id: 5, img: img5, row: 2, cols: 1 },
+    { id: 6, img: img6, row: 2, cols: 1 },
+    { id: 7, img: img7, row: 3, cols: 1 },
+    { id: 8, img: img8, row: 2, cols: 1 },
+    { id: 9, img: img9, row: 1, cols: 1 },
+    { id: 10, img: img10, row: 1, cols: 2 },
   ];
   const [preview, setPreview] = useState({ url: "", isOpen: false });
-  console.log(preview);
   const cards = [
     {
       id: "pokedex",
@@ -112,7 +111,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <section hidden={true} id="portfolio" className="py-5">
+    <section id="portfolio" className="py-5">
       <Box className="container4">
         <Typography
           variant="div"
@@ -192,7 +191,7 @@ const Portfolio = () => {
           >
             <ImageList variant="quilted" cols={3} gap={8}>
               {imageData.map((item) => (
-                <ImageListItem key={item.img} cols={item.cols} rows={item.row}>
+                <ImageListItem key={item.id} cols={item.cols} rows={item.row}>
                   <Image
                     className="object-cover h-full hover:object-contain"
                     src={item.img}

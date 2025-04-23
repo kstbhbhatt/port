@@ -14,8 +14,8 @@ export default function PokedexPopup({
           <Box
             className="bg-white p-5 pt-12 rounded-lg shadow-lg max-w-5xl w-full relative"
             style={{
-              maxHeight: "calc( 100vh - 84px)",
-              height: "calc( 90% - 84px)",
+              // maxHeight: "calc( 100vh - 84px)",
+              height: "calc( 100vh - 84px)",
               marginTop: "64px",
             }}
           >
@@ -32,7 +32,7 @@ export default function PokedexPopup({
             <iframe
               src={src}
               className="w-full border-none"
-              style={{ height: "calc(100% - 70px)" }}
+              style={{ height: "calc(100% - 52px)" }}
             ></iframe>
 
             {/* Open in New Tab Button */}

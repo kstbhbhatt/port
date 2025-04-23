@@ -1,10 +1,23 @@
+// use client
 import XIcon from "@mui/icons-material/X";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import DownloadIcon from "@mui/icons-material/Download";
 import { Typography, Box, Button, Container } from "@mui/material";
+
 const Header = () => {
+  // create element
+  const resume = "./../../public/assets/Kaustubh_Bhatt_React_JS.pdf";
+  const link = document.createElement("a");
+  link.href = resume;
+  link.download = "Kaustubh_Bhatt_React_JS.pdf";
+
+  const onButtonClick = () => {
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <Box className="h-svh bg-header-img bg-cover  bg-center ">
       <Container className=" h-full">
@@ -64,6 +77,7 @@ const Header = () => {
               variant="contained"
               color="secondary"
               tabIndex={-1}
+              onClick={onButtonClick}
               startIcon={<DownloadIcon />}
             >
               Resume

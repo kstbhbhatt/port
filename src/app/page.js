@@ -2,29 +2,19 @@
 import Header from "@/components/Header";
 import NavBar from "@/components/NavBar";
 import {
-  AppBar,
   Button,
   Container,
-  Toolbar,
   Box,
   Typography,
-  useMediaQuery,
-  SwipeableDrawer,
-  List,
-  IconButton,
-  ListItemButton,
-  Divider,
-  ImageList,
-  ImageListItem,
 } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import Link from "next/link";
 
 import About from "@/components/About";
 import Resume from "@/components/Resume";
 import Banner from "@/components/Banner";
 import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
-import PokedexPopup from "@/components/PokeDexPopUp";
 
 export default function Home() {
   const theme = createTheme({
@@ -75,7 +65,7 @@ export default function Home() {
               color="secondary"
               tabIndex={-1}
             >
-              Contact Me
+              <Link href={`#contact`}>Contact Me</Link>
             </Button>
           </Box>
         </Banner>
