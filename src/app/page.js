@@ -24,6 +24,7 @@ import Resume from "@/components/Resume";
 import Banner from "@/components/Banner";
 import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
+import PokedexPopup from "@/components/PokeDexPopUp";
 
 export default function Home() {
   const theme = createTheme({

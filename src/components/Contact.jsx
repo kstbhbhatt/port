@@ -1,3 +1,5 @@
+import { useState } from "react";
+import Link from "next/link";
 import Banner from "./Banner";
 import XIcon from "@mui/icons-material/X";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -16,6 +18,7 @@ import {
 
 const line = "w-10 block border-b-4 border-b-[#F85C70]";
 const Contact = () => {
+  const [messageTxt, setMessageTxt] = useState("Wtite your message here...");
   return (
     <Banner>
       <section id="contact" className="feedback">
@@ -37,7 +40,16 @@ const Contact = () => {
               }
             ></CardHeader>
             <CardContent className="card-content">
-              <TextField multiline fullWidth id="fullWidth" minRows={8} />
+              <TextField
+                multiline
+                fullWidth
+                id="fullWidth"
+                minRows={8}
+                onChange={(e) => {
+                  setMessageTxt(e.target.value);
+                }}
+                value={messageTxt}
+              />
             </CardContent>
             <CardActions>
               <Button
@@ -47,6 +59,11 @@ const Contact = () => {
                 variant="outlined"
                 color="secondary"
                 tabIndex={-1}
+                onClick={() => {
+                  window.location.href = `mailto:kstbhbhatt@gmail.com?cc=kaubhatt@deloitte.com&subject=Write desired Subject&body=${encodeURI(
+                    messageTxt
+                  )}`;
+                }}
               >
                 Send Message
               </Button>
@@ -79,7 +96,12 @@ const Contact = () => {
                   >
                     Email :
                   </Typography>{" "}
-                  kstbhbhatt@gmail.com
+                  <Typography color="secondary" component="span">
+                    <Link href="mailto:kstbhbhatt@gmail.com">
+                      {" "}
+                      kstbhbhatt@gmail.com
+                    </Link>
+                  </Typography>
                 </li>
                 <li>
                   <Typography

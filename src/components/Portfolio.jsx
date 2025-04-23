@@ -1,3 +1,5 @@
+// use client
+import { useState } from "react";
 import {
   AppBar,
   Button,
@@ -17,7 +19,9 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
+  CardActions,
 } from "@mui/material";
+import PokedexPopup from "./PokeDexPopUp";
 import Image from "next/image";
 import img1 from "../../public/assets/img1.jpg";
 import img2 from "../../public/assets/2.jpg";
@@ -34,6 +38,7 @@ const ActionAreaCard = ({
   img = { src: "" },
   content = { title: "", body: "" },
   url = "",
+  handleAction = () => {},
 }) => {
   return (
     <Card className="w-full lg:w-1/3">
@@ -62,6 +67,11 @@ const ActionAreaCard = ({
           </Typography>
         </CardContent>
       </CardActionArea>
+      <CardActions>
+        <Button size="medium" onClick={() => handleAction(url)}>
+          View
+        </Button>
+      </CardActions>
     </Card>
   );
 };
@@ -78,8 +88,11 @@ const Portfolio = () => {
     { img: img9, row: 1, cols: 1 },
     { img: img10, row: 1, cols: 2 },
   ];
+  const [preview, setPreview] = useState({ url: "", isOpen: false });
+  console.log(preview);
   const cards = [
     {
+      id: "pokedex",
       img: { src: "/assets/s23.jpg" },
       content: {
         title: "Samsung Galaxy S23 Ultra",
@@ -88,6 +101,7 @@ const Portfolio = () => {
       url: "https://kstbhbhatt.github.io/react1/",
     },
     {
+      id: "samsung",
       img: { src: "/assets/pokedex.jpeg" },
       content: {
         title: "Pokedex",
@@ -98,7 +112,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-5">
+    <section hidden={true} id="portfolio" className="py-5">
       <Box className="container4">
         <Typography
           variant="div"
@@ -131,12 +145,24 @@ const Portfolio = () => {
           <Box className="flex gap-3 flex-col lg:flex-row">
             {cards.map((card) => (
               <ActionAreaCard
+                key={card.id}
                 img={card.img}
                 content={card.content}
                 url={card.url}
+                handleAction={(url) =>
+                  setPreview({
+                    url: url,
+                    isOpen: true,
+                  })
+                }
               />
             ))}
           </Box>
+          <PokedexPopup
+            src={preview.url}
+            isOpen={preview.isOpen}
+            onClose={() => setPreview({ url: "", isOpen: false })}
+          />
         </Box>
         <Box
           sx={{
