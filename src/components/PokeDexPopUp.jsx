@@ -34,7 +34,7 @@ export default function PokedexPopup({
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            zIndex: 50,
+            zIndex: 90,
           }}
         >
           <Box
@@ -44,7 +44,7 @@ export default function PokedexPopup({
               pt: 12,
               borderRadius: 1,
               boxShadow: 24,
-              maxWidth: "80%",
+              maxWidth: "64rem",
               width: "100%",
               position: "relative",
               height: "calc(100vh - 84px)",
