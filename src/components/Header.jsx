@@ -58,6 +58,7 @@ const Header = () => {
               color="header"
               component="h1"
               className="header-title text-6xl lg:text-8xl"
+              sx={{ fontSize: { xs: "4rem", sm: "5rem", md: "8rem" } }}
             >
               Kaustubh Bhatt
             </Typography>
