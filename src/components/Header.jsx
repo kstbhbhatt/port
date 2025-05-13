@@ -1,4 +1,5 @@
-// use client
+"use client";
+import Link from "next/link";
 import XIcon from "@mui/icons-material/X";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -8,7 +9,7 @@ import { Typography, Box, Button, Container } from "@mui/material";
 
 const Header = () => {
   const onButtonClick = () => {
-    const resume = "./../../public/assets/Kaustubh_Bhatt_React_JS.pdf";
+    const resume = "/assets/Kaustubh_Bhatt_React_JS.pdf";
     const link = document.createElement("a");
     link.href = resume;
     link.download = "Kaustubh_Bhatt_React_JS.pdf";
@@ -68,18 +69,24 @@ const Header = () => {
             >
               Front end Developer | Digital Art
             </Typography>
+            {/* <Link
+              href="/assets/Kaustubh_Bhatt_React_JS.pdf"
+              download="Kaustubh_Bhatt_React_JS.pdf"
+              passHref
+              target="_blank"
+            > */}
             <Button
               className="w-fit my-8"
-              component="label"
-              role={undefined}
+              component="a"
+              href="/assets/Kaustubh_Bhatt_React_JS.pdf"
+              download="Kaustubh_Bhatt_React_JS.pdf"
               variant="contained"
               color="secondary"
-              tabIndex={-1}
-              onClick={onButtonClick}
               startIcon={<DownloadIcon />}
             >
               Resume
             </Button>
+            {/* </Link> */}
           </div>
         </Box>
       </Container>

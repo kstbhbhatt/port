@@ -289,11 +289,43 @@ const Resume = () => {
                       component="h6"
                       className=""
                     >
+                      TypeScript
+                    </Typography>
+                    <LinearProgress
+                      variant="determinate"
+                      value={50}
+                      color="secondary"
+                      sx={{ height: 6, borderRadius: 3, width: "100%" }}
+                    />
+                  </ListItem>
+                  <ListItem className="flex-col px-0" alignItems="flex-start">
+                    <Typography
+                      variant="h6"
+                      color="primary"
+                      component="h6"
+                      className=""
+                    >
                       React
                     </Typography>
                     <LinearProgress
                       variant="determinate"
                       value={72}
+                      color="secondary"
+                      sx={{ height: 6, borderRadius: 3, width: "100%" }}
+                    />
+                  </ListItem>
+                  <ListItem className="flex-col px-0" alignItems="flex-start">
+                    <Typography
+                      variant="h6"
+                      color="primary"
+                      component="h6"
+                      className=""
+                    >
+                      angular
+                    </Typography>
+                    <LinearProgress
+                      variant="determinate"
+                      value={30}
                       color="secondary"
                       sx={{ height: 6, borderRadius: 3, width: "100%" }}
                     />
