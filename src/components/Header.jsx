@@ -76,7 +76,8 @@ const Header = () => {
               target="_blank"
             > */}
             <Button
-              className="w-fit my-8"
+              sx={{ marginTop: "20px" }}
+              className="w-fit"
               component="a"
               href="/assets/Kaustubh_Bhatt_React_JS.pdf"
               download="Kaustubh_Bhatt_React_JS.pdf"

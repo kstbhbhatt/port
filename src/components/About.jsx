@@ -175,6 +175,12 @@ const About = () => {
                   color="primary"
                   component="h3"
                   className="text-2xl font-semibold"
+                  sx={{
+                    fontSize: "1.5rem",
+                    fontWeight: 600,
+                    lineHeight: 1.2,
+                    marginBottom: "0.5rem",
+                  }}
                 >
                   My Expertise
                 </Typography>
