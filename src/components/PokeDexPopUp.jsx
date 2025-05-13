@@ -47,7 +47,7 @@ export default function PokedexPopup({
               maxWidth: "64rem",
               width: "100%",
               position: "relative",
-              height: "calc(100dvh - 84px)",
+              height: "calc(100svh - 84px)",
               mt: "64px",
               color: "text.primary",
               border: isDarkMode ? "1px solid rgba(255,255,255,0.1)" : "none",
