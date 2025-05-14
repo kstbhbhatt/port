@@ -27,12 +27,7 @@ const About = () => {
           <CardHeader
             title={
               <Box>
-                <Typography
-                  variant="h3"
-                  color="primary"
-                  component="h3"
-                  className="text-2xl font-semibold"
-                >
+                <Typography variant="h3" color="primary" component="h3">
                   Who am I?
                 </Typography>
                 <span className={line} />
@@ -78,12 +73,7 @@ const About = () => {
           <CardHeader
             title={
               <Box>
-                <Typography
-                  variant="h3"
-                  color="primary"
-                  component="h3"
-                  className="text-2xl font-semibold"
-                >
+                <Typography variant="h3" color="primary" component="h3">
                   Personal Info
                 </Typography>
                 <span className={line} />
@@ -170,18 +160,7 @@ const About = () => {
           <CardHeader
             title={
               <Box>
-                <Typography
-                  variant="h3"
-                  color="primary"
-                  component="h3"
-                  className="text-2xl font-semibold"
-                  sx={{
-                    fontSize: "1.5rem",
-                    fontWeight: 600,
-                    lineHeight: 1.2,
-                    marginBottom: "0.5rem",
-                  }}
-                >
+                <Typography variant="h3" color="primary" component="h3">
                   My Expertise
                 </Typography>
                 <span className={line} />

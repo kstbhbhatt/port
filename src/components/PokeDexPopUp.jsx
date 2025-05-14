@@ -41,7 +41,7 @@ export default function PokedexPopup({
             sx={{
               bgcolor: "background.paper",
               p: 5,
-              pt: 12,
+              paddingTop: "52px",
               borderRadius: 1,
               boxShadow: 24,
               maxWidth: "64rem",

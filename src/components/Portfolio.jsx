@@ -33,7 +33,7 @@ import img7 from "../../public/assets/7.jpg";
 import img8 from "../../public/assets/8.jpg";
 import img9 from "../../public/assets/9.jpg";
 import img10 from "../../public/assets/10.jpg";
-const line = "w-8 block border-b-2 border-b-[#F85C70]";
+const line = "w-6 block border-b-4 border-b-[#F85C70]";
 const ActionAreaCard = ({
   img = { src: "" },
   content = { title: "", body: "" },
@@ -91,20 +91,20 @@ const Portfolio = () => {
   const [preview, setPreview] = useState({ url: "", isOpen: false });
   const cards = [
     {
-      id: "pokedex",
+      id: "samsung",
       img: { src: "/assets/s23.jpg" },
       content: {
         title: "Samsung Galaxy S23 Ultra",
-        body: "This is the very first react project",
+        body: "My first React project showcasing the Samsung Galaxy S23 Ultra. Built using component structure and state management with useState hooks for interactive elements and UI changes.",
       },
       url: "https://kstbhbhatt.github.io/react1/",
     },
     {
-      id: "samsung",
+      id: "pokedex",
       img: { src: "/assets/pokedex.jpeg" },
       content: {
         title: "Pokedex",
-        body: "This is an informative webpage about pokemons stats",
+        body: "Built using React.js and REST APIs to fetch real-time Pokémon data. Deployed on GitHub Pages for public access, showcasing expertise in React and API integration.",
       },
       url: "https://kstbhbhatt.github.io/pokedex/",
     },

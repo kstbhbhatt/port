@@ -10,14 +10,14 @@ import {
   LinearProgress,
 } from "@mui/material";
 const Resume = () => {
-  const line = "w-8 block border-b-2 border-b-[#F85C70]";
+  const line = "w-6 block border-b-4 border-b-[#F85C70]";
   return (
     <section id="resume">
       <Box className="py-5">
         <Typography
-          variant="h4"
+          variant="div"
           color="primary"
-          component="h4"
+          component="div"
           className="text-2xl font-semibold"
         >
           <Typography
@@ -36,12 +36,7 @@ const Resume = () => {
               <CardHeader
                 title={
                   <Box>
-                    <Typography
-                      variant="div"
-                      color="primary"
-                      component="div"
-                      className="text-2xl font-semibold"
-                    >
+                    <Typography variant="h3" color="primary" component="h3">
                       Experience
                     </Typography>
                     <span className={line} />
@@ -128,12 +123,7 @@ const Resume = () => {
               <CardHeader
                 title={
                   <Box>
-                    <Typography
-                      variant="div"
-                      color="primary"
-                      component="div"
-                      className="text-2xl font-semibold"
-                    >
+                    <Typography variant="h3" color="primary" component="h3">
                       Education
                     </Typography>
                     <span className={line} />
@@ -220,12 +210,7 @@ const Resume = () => {
               <CardHeader
                 title={
                   <Box>
-                    <Typography
-                      variant="div"
-                      color="primary"
-                      component="div"
-                      className="text-2xl font-semibold"
-                    >
+                    <Typography variant="h3" color="primary" component="h3">
                       Skills
                     </Typography>
                     <span className={line} />

@@ -35,7 +35,12 @@ const NavBar = () => {
           {isDesktop && (
             <Box className="flex gap-3 w-1/3">
               {inPageNavigation1.map((item) => (
-                <Button key={item.id} variant="text" color="primary">
+                <Button
+                  key={item.id}
+                  variant="text"
+                  color="primary"
+                  size="large"
+                >
                   <Link href={`#${item.id}`}>{item.title}</Link>
                 </Button>
               ))}

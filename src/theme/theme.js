@@ -40,7 +40,9 @@ const lightTheme = createTheme({
       color: brightWhite,
     },
     h3: {
-      fontSize: "1.25rem", // Make h3 smaller for section headers
+      fontSize: "1.5rem",
+      fontWeight: "600",
+      marginBottom: "0.5rem",
     },
   },
   components: {
@@ -67,6 +69,12 @@ const lightTheme = createTheme({
     MuiCard: {
       styleOverrides: {
         root: {
+          ".MuiCardHeader-root": {
+            padding: "1.5rem",
+          },
+          ".MuiCardContent-root": {
+            padding: "1.5rem",
+          },
           boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.05)",
           borderRadius: "0.5rem",
         },
@@ -133,7 +141,9 @@ const darkTheme = createTheme({
     },
     h3: {
       color: brightWhite,
-      fontSize: "1.25rem", // Make h3 smaller for section headers
+      fontSize: "1.5rem",
+      fontWeight: "600",
+      marginBottom: "0.5rem",
     },
   },
   components: {
@@ -179,6 +189,12 @@ const darkTheme = createTheme({
     MuiCard: {
       styleOverrides: {
         root: {
+          ".MuiCardHeader-root": {
+            padding: "1.5rem",
+          },
+          ".MuiCardContent-root": {
+            padding: "1.5rem",
+          },
           backgroundColor: "rgba(32, 45, 67, 0.7)",
           boxShadow: `0 10px 30px -15px rgba(10, 25, 48, 0.5)`,
           borderRadius: "4px",
