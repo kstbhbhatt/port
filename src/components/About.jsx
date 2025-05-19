@@ -15,7 +15,7 @@ import {
   CardActions,
 } from "@mui/material";
 const About = () => {
-  const section = " w-full lg:w-1/3";
+  const section = "w-full lg:w-1/3";
   const line = "w-10 block border-b-4 border-b-[#F85C70]";
   return (
     <section
@@ -23,7 +23,7 @@ const About = () => {
       className="flex lg:flex-row flex-col gap-3 py-5 border-b border-b-[#dee2e6]"
     >
       <Box className={section}>
-        <Card variant="outlined">
+        <Card variant="outlined" sx={{ height: "100%" }}>
           <CardHeader
             title={
               <Box>
@@ -35,22 +35,13 @@ const About = () => {
             }
           ></CardHeader>
           <CardContent className="card-content">
-            <Typography
-              gutterBottom
-              variant="body1"
-              component="div"
-              color="primary"
-            >
-              Frontend Developer with 2 years of expertise in crafting visually
-              appealing and user-friendly web interfaces.
-            </Typography>
-            <Typography variant="body2" color="primary">
-              Skilled in HTML, CSS, JavaScript, React enhancing website
-              accessibility, optimizing performance, and delivering exceptional
-              user experiences. Demonstrated ability to collaborate effectively
-              in team environments, contributing to successful project outcomes.
-              Committed to staying up-to-date with the latest frontend
-              development trends and best practices.
+            <Typography variant="body1" component="div" color="primary">
+              Frontend Developer with 3 years of experience building
+              user-friendly web interfaces using HTML, CSS, JavaScript and
+              React. Focused on accessibility, performance optimization, and
+              collaborative development. Constantly exploring the latest
+              frontend technologies and best practices to deliver exceptional
+              user experiences.
             </Typography>
           </CardContent>
           {/* <CardActions>
@@ -69,7 +60,7 @@ const About = () => {
         </Card>
       </Box>
       <Box className={section}>
-        <Card variant="outlined">
+        <Card variant="outlined" sx={{ height: "100%" }}>
           <CardHeader
             title={
               <Box>
@@ -128,7 +119,11 @@ const About = () => {
               </li>
             </ul>
           </CardContent>
-          <CardActions>
+          <CardActions
+            sx={{
+              padding: "1.5rem",
+            }}
+          >
             <ul className="flex gap-3 mb-5 lg:mb-10">
               <li>
                 <a href="https://www.facebook.com/kstbhbhatt" target="_blank">
@@ -156,7 +151,7 @@ const About = () => {
         </Card>
       </Box>
       <Box className={section}>
-        <Card variant="outlined">
+        <Card variant="outlined" sx={{ height: "100%" }}>
           <CardHeader
             title={
               <Box>
@@ -168,9 +163,9 @@ const About = () => {
             }
           ></CardHeader>
           <CardContent className="card-content">
-            <div className="flex align-top">
-              <WebIcon color="secondary" fontSize="large" className="mx-2" />
-              <div className="icon-text">
+            <div className="flex flex-col gap-2 mb-3">
+              <div className="flex gap-2">
+                <WebIcon color="secondary" fontSize="large" />
                 <Typography
                   variant="h6"
                   color="primary"
@@ -179,6 +174,9 @@ const About = () => {
                 >
                   Web Development
                 </Typography>
+              </div>
+
+              <div className="icon-text">
                 <Typography
                   variant="p"
                   color="primary"
@@ -190,9 +188,13 @@ const About = () => {
                 </Typography>
               </div>
             </div>
-            <div className="flex">
-              <BrushIcon color="secondary" fontSize="large" className="mx-2" />
-              <div className="icon-text">
+            <div className="flex flex-col gap-2">
+              <div className="flex gap-2">
+                <BrushIcon
+                  color="secondary"
+                  fontSize="large"
+                  className="mx-2"
+                />
                 <Typography
                   variant="h6"
                   color="primary"
@@ -201,6 +203,8 @@ const About = () => {
                 >
                   Digital Art
                 </Typography>
+              </div>
+              <div className="icon-text">
                 <Typography
                   variant="p"
                   color="primary"
