@@ -41,8 +41,9 @@ const ActionAreaCard = ({
   handleAction = () => {},
 }) => {
   return (
-    <Card className="w-full lg:w-1/3">
+    <Card className="w-full lg:w-1/3 flex flex-col">
       <CardActionArea
+        className="flex-1"
         onClick={() => {
           window.open(url, "_blank");
         }}
@@ -67,7 +68,7 @@ const ActionAreaCard = ({
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
+      <CardActions className="mt-auto">
         <Button size="medium" onClick={() => handleAction(url)}>
           View
         </Button>
@@ -95,7 +96,7 @@ const Portfolio = () => {
       img: { src: "/assets/s23.jpg" },
       content: {
         title: "Samsung Galaxy S23 Ultra",
-        body: "My first React project showcasing the Samsung Galaxy S23 Ultra. Built using component structure and state management with useState hooks for interactive elements and UI changes.",
+        body: "Developed a React.js product showcase for the Samsung Galaxy S23 Ultra, using reusable components and useState for interactive UI elements and state management. Deployed on GitHub Pages to demonstrate React fundamentals and responsive interface design.",
       },
       url: "https://kstbhbhatt.github.io/react1/",
     },
@@ -107,6 +108,15 @@ const Portfolio = () => {
         body: "Built using React.js and REST APIs to fetch real-time Pokémon data. Deployed on GitHub Pages for public access, showcasing expertise in React and API integration.",
       },
       url: "https://kstbhbhatt.github.io/pokedex/",
+    },
+    {
+      id: "ubuntu",
+      img: { src: "/assets/ubuntu.webp" },
+      content: {
+        title: "Ubuntu App",
+        body: "Developing an Ubuntu-themed portfolio web app featuring draggable and resizable window-like components that simulate a desktop environment. Built with React.js, CSS, and state management techniques for an interactive live preview experience.",
+      },
+      url: "https://my-ubuntu-resume.vercel.app/",
     },
   ];
 
