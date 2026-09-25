@@ -45,7 +45,7 @@ const Resume = () => {
               ></CardHeader>
               <CardContent className="card-content">
                 {/* <List> */}
-                {/* First Position - Consultant */}
+                {/* First Position - Software Engineer II */}
                 <Box>
                   <Typography
                     variant="p"
@@ -53,7 +53,7 @@ const Resume = () => {
                     component="p"
                     className="text-xl font-semibold"
                   >
-                    Consultant (Frontend Developer)
+                    Software Engineer II
                   </Typography>
                   <Typography
                     variant="p"
@@ -64,22 +64,37 @@ const Resume = () => {
                     May 2025 - Present
                   </Typography>
                 </Box>
-                <ListItem>
-                  <List className=" h-full lg:max-h-[400px] lg:overflow-auto">
-                    <ListItem divider className="text-sm font-normal">
-                      Working as an Angular developer on a B2B commerce
-                      application, implementing responsive UI components and
-                      complex business logic.
-                    </ListItem>
-                    <ListItem divider className="text-sm font-normal">
-                      Collaborating with cross-functional teams to deliver
-                      high-quality features that enhance the B2B commerce
-                      experience.
-                    </ListItem>
-                  </List>
-                </ListItem>
+                <List className=" h-full lg:max-h-[400px] lg:overflow-auto">
+                  <ListItem divider className="text-sm font-normal">
+                    Achieved a 15% improvement in system scalability and
+                    workflow efficiency by architecting responsive Angular UI
+                    components and complex business logic for a high-traffic B2B
+                    commerce application.
+                  </ListItem>
+                  <ListItem divider className="text-sm font-normal">
+                    Decreased cart abandonment and minimized transaction
+                    friction by streamlining checkout functionality through the
+                    integration of a secure payment workflow.
+                  </ListItem>
+                  <ListItem divider className="text-sm font-normal">
+                    Restored system stability and reduced critical UI/API bugs
+                    by 25% by spearheading rigorous frontend defect triage,
+                    root-cause analysis, and rapid bug resolution.
+                  </ListItem>
+                  <ListItem divider className="text-sm font-normal">
+                    Elevated overall code quality and sprint velocity by
+                    mentoring and directing an 8+ member frontend team, ensuring
+                    consistent feature delivery through strict code reviews and
+                    Angular best practices.
+                  </ListItem>
+                  <ListItem divider className="text-sm font-normal">
+                    Increased deployment success rate by 65% by driving
+                    cross-functional collaboration and alignment between QA,
+                    backend, and product teams.
+                  </ListItem>
+                </List>
 
-                {/* Second Position - Analyst */}
+                {/* Second Position - Front End Developer (Analyst) */}
                 <Box sx={{ mt: 3 }}>
                   <Typography
                     variant="p"
@@ -87,7 +102,7 @@ const Resume = () => {
                     component="p"
                     className="text-xl font-semibold"
                   >
-                    Analyst (Frontend Developer)
+                    Front End Developer (Analyst)
                   </Typography>
                   <Typography
                     variant="p"
@@ -95,42 +110,34 @@ const Resume = () => {
                     component="p"
                     className="text-md font-normal"
                   >
-                    Sept 2022 - May 2025
+                    Sep 2022 - May 2025
                   </Typography>
                 </Box>
                 <List className=" h-full lg:h-[400px] lg:overflow-auto">
                   <ListItem divider className="text-sm font-normal">
-                    Managed and resolved all SIT and UAT defects, ensuring a
-                    smooth and successful product launch.
-                    <br />
-                    Provided on-site UAT support, contributing to the project's
-                    timely and successful completion.
+                    Minimized production downtime by 25% and resolved 90+
+                    critical defects by directing a 5-developer team and serving
+                    as the primary technical escalation point during critical
+                    on-site B2B product launches.
                   </ListItem>
 
-                  <ListItem>
-                    Migrated the system to React-table and developed essential
-                    components like tooltips and custom button variations,
-                    boosting performance and user engagement.
+                  <ListItem divider className="text-sm font-normal">
+                    Reduced developer onboarding time by 45% and accelerated new
+                    feature delivery by engineering a config-driven React Table
+                    using TanStack Table, successfully modernizing 50% of the
+                    platform's UI.
                   </ListItem>
                   <ListItem divider className="text-sm font-normal">
-                    Refactored codebase for efficiency and maintainability,
-                    creating reusable components and documenting VM setup to
-                    streamline onboarding.
+                    Increased user engagement by 30% and reduced UI development
+                    effort by 50% by leading comprehensive UI redesign
+                    initiatives and implementing a reusable, cross-team
+                    component library.
                   </ListItem>
                   <ListItem divider className="text-sm font-normal">
-                    Mentored team members, fostering collaboration and
-                    maintaining high coding standards, leading to improved
-                    operational efficiency.
-                  </ListItem>
-                  <ListItem divider className="text-sm font-normal">
-                    Solely led the development of a PoC for an innovative DevOps
-                    tool leveraging ChatGPT and GenAI, automating code
-                    generation for DevOps pipelines and providing instant
-                    answers to DevOps related queries.
-                    <br />
-                    Contributed to the Vision AI initiative, transforming hand
-                    drawn architecture images into executable code,
-                    demonstrating the potential of AI in software development.
+                    Reduced initial rendering time by 2 seconds by optimizing
+                    frontend load performance via lazy loading and extensive
+                    code refactoring within core B2B commerce modules (Cart and
+                    Pricing).
                   </ListItem>
                 </List>
               </CardContent>

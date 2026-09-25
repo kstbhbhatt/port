@@ -36,12 +36,13 @@ const About = () => {
           ></CardHeader>
           <CardContent className="card-content">
             <Typography variant="body1" component="div" color="primary">
-              Frontend Developer with 3 years of experience building
-              user-friendly web interfaces using HTML, CSS, JavaScript and
-              React. Focused on accessibility, performance optimization, and
-              collaborative development. Constantly exploring the latest
-              frontend technologies and best practices to deliver exceptional
-              user experiences.
+              Software Engineer with 4 years of experience engineering scalable,
+              responsive, and accessible web applications using React.js,
+              Angular, and modern JavaScript. Specialized in application
+              maintenance, performance optimization, and rigorous defect triage
+              to deliver seamless cross-device user experiences. Proven ability
+              to lead frontend teams, stabilize complex existing codebases, and
+              drive cross-functional feature delivery.
             </Typography>
           </CardContent>
           {/* <CardActions>
